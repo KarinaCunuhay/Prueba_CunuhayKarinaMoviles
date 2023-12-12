@@ -2,6 +2,8 @@
 // Allows user to set the drawing color on the DoodleView
 package fisei.greyes.doodlz;
 
+import static android.app.PendingIntent.getActivity;
+
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
@@ -19,7 +21,7 @@ import android.widget.SeekBar.OnSeekBarChangeListener;
 import com.deitel.doodlz.R;
 
 // class for the Select Line Width dialog
-public class LineWidthDialogFragment extends DialogFragment {
+public class LineWidthDialogFragment extends ColorDialogFragment {
     private ImageView widthImageView;
 
     // create an AlertDialog and return it
